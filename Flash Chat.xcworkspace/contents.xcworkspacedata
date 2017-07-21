@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Flash Chat.xcodeproj">
+      location = "group:/Users/user/Documents/ios_projects_2017/myChat/myChat.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

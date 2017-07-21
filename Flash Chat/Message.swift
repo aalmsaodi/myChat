@@ -6,8 +6,12 @@
 
 class Message {
     
-    //TODO: Messages need a messageBody and a sender variable
+    var sender:String = ""
+    var body:String = ""
     
-    
+    init(sender:String, messsageBody:String){
+        self.sender = sender
+        self.body = messsageBody
+    }
     
 }

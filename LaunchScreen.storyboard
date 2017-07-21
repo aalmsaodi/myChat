@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,22 +21,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="e8P-2y-UOi"/>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LABLOGONewRound2" translatesAutoresizingMaskIntoConstraints="NO" id="Z2H-EB-qKh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-60" translatesAutoresizingMaskIntoConstraints="NO" id="d8s-9K-40V">
+                                <rect key="frame" x="137" y="283" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="d9Y-LO-4g3"/>
-                                    <constraint firstAttribute="height" constant="300" id="z7B-Ec-NH1"/>
+                                    <constraint firstAttribute="width" constant="100" id="5jS-ZS-jOa"/>
+                                    <constraint firstAttribute="height" constant="100" id="ik0-cv-Lds"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyChat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6q-dA-8z8">
+                                <rect key="frame" x="146" y="393" width="82.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.0050879525952041149" green="0.55105632543563843" blue="0.84187495708465576" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="e8P-2y-UOi" secondAttribute="bottom" id="9LD-TR-xd6"/>
-                            <constraint firstItem="Z2H-EB-qKh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="CHE-G5-Zpp"/>
-                            <constraint firstAttribute="trailing" secondItem="e8P-2y-UOi" secondAttribute="trailing" id="QlK-Wi-vgP"/>
-                            <constraint firstItem="e8P-2y-UOi" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="XCV-2t-8hq"/>
-                            <constraint firstItem="e8P-2y-UOi" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="btT-P1-AD1"/>
-                            <constraint firstItem="Z2H-EB-qKh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="mLx-dJ-9ex"/>
+                            <constraint firstItem="d8s-9K-40V" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ErD-BA-bQg"/>
+                            <constraint firstItem="L6q-dA-8z8" firstAttribute="top" secondItem="d8s-9K-40V" secondAttribute="bottom" constant="10" id="YWU-YF-DwC"/>
+                            <constraint firstItem="L6q-dA-8z8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="brN-Cw-8cb"/>
+                            <constraint firstItem="d8s-9K-40V" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lk9-8i-D6E"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -42,7 +50,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="596" height="842"/>
-        <image name="LABLOGONewRound2" width="250" height="250"/>
+        <image name="Icon-60" width="60" height="60"/>
     </resources>
 </document>
